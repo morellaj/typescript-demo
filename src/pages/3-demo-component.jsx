@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <Profile 
       person={{name: "Timithord"}}
-      hobbies={["rolling", "looking up"]}
+      hobbies={["Reading", "Talking a lot"]}
       favoriteBooks={[
         {name: "Lord of the Rings"},
         {name: "Harry Potter"}
