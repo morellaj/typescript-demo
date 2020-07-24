@@ -1,14 +1,13 @@
 import React from "react"
 
 const Profile = (props) => {
-  const {person: {name, age}, hobbies, favoriteBooks} = props;
   return (
     <div>
-      <div>Name: {name || "!!MISSING!!"}</div>
-      <div>Age: {age || "!!MISSING!!"}</div>
-      <div>Hobbies: {hobbies.reduce((str, current) => `${str}, ${current}`)  || "!!MISSING!!"}</div>
+      <div>Name: {props.person.name || "!!MISSING!!"}</div>
+      <div>Age: {props.person.age || "!!MISSING!!"}</div>
+      <div>Hobbies: {props.hobbies.reduce((str, current) => `${str}, ${current}`)  || "!!MISSING!!"}</div>
       <div style={{display: 'flex', width: '600px', justifyContent: 'space-between'}}>
-      Favorite books: {favoriteBooks.map(book =>(
+      Favorite books: {props.favoriteBooks.map(book =>(
         <div key={book.name}>
           <div>Book: {book.name  || "!!MISSING!!"}</div>
           <div>Author: {book.author || "!!MISSING!!"}</div>
