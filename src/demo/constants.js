@@ -3,6 +3,8 @@ export let employeeList = [
   {firstName: "Allen", lastName: "Hulley", email: "456@callibrity.com"}
 ];
 
+export const initialDisplay = "123456789";
+
 export let productCatalog = {
   "paint": {
     price: 100,

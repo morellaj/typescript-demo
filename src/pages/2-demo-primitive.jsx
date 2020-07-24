@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import ReverseCharacters from "../demo/ReverseCharacters";
+import {initialDisplay} from "../demo/constants"
 
 const Index = () => {
-  const [display, setDisplay] = useState("123456789");
+  const [display, setDisplay] = useState(initialDisplay);
   const list = display.split('').map(character => <div>{character}</div>)
   return (
     <div>
