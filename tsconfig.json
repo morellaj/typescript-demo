@@ -2,14 +2,20 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "sourceMap": true,
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "allowJs": true,
+        "allowJs": false,
+        "strict": true,
+        "strictNullChecks": true,
         "module": "commonjs",
         "target": "esnext",
         "jsx": "react",
-        "lib": ["dom", "esnext"]
+        "lib": ["dom", "esnext"],
+        "strictPropertyInitialization": true,
+        "strictFunctionTypes": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false
     },
     "include": [
         "./src/**/*"
