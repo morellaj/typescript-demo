@@ -3,8 +3,6 @@ import EmployeeDisplay from "../demo/EmployeeDisplay";
 import {employeeList} from "../demo/constants";
 
 const Index = () => {
-employeeList.push({ FirstName: "Alex", LastName: "Morelli" });
-
   return (
     <div>
       <EmployeeDisplay list={employeeList} />
@@ -13,4 +11,4 @@ employeeList.push({ FirstName: "Alex", LastName: "Morelli" });
 }
 
 export default Index
-// employeeList.push({ FirstName: "Alex", LastName: "Morelli" });
+// employeeList.push({ FirstName: "Sample", LastName: "Sample" });
