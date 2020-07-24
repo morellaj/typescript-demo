@@ -6,7 +6,7 @@ const EmployeeDisplay = (props) => {
     {props.list.map(ele => {
       if(ele.email !== undefined){
         return(
-          <div>
+          <div key={ele.email}>
             <div>First Name: {ele.firstName}</div>
             <div>Last Name: {ele.lastName}</div>
           </div>

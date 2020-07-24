@@ -4,7 +4,7 @@ import {initialDisplay} from "../demo/constants"
 
 const Index = () => {
   const [display, setDisplay] = useState(initialDisplay);
-  const list = display.split('').map(character => <div>{character}</div>)
+  const list = display.split('').map(character => <div key={character}>{character}</div>)
   return (
     <div>
       {list}

@@ -9,7 +9,7 @@ const Profile = (props) => {
       <div>Hobbies: {hobbies.reduce((str, current) => `${str}, ${current}`)  || "!!MISSING!!"}</div>
       <div style={{display: 'flex', width: '600px', justifyContent: 'space-between'}}>
       Favorite books: {favoriteBooks.map(book =>(
-        <div>
+        <div key={book.name}>
           <div>Book: {book.name  || "!!MISSING!!"}</div>
           <div>Author: {book.author || "!!MISSING!!"}</div>
         </div>
