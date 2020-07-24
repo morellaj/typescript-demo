@@ -25,7 +25,7 @@ export default Profile
 
 /*
 Profile.propTypes = {
-  hobbies: PropTypes.array.isRequired,
+  hobbies: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   person: PropTypes.shape({
     name: PropTypes.string.isRequired,
     age: PropTypes.number.isRequired
