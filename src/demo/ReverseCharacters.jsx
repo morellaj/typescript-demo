@@ -9,3 +9,5 @@ const ChangeCharacters = (props) => {
 }
 
 export default ChangeCharacters
+
+// ({setDisplay: Dispatch<SetStateAction<number>>})
